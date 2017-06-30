@@ -1,5 +1,3 @@
-#' @author Aurora Baluja, \email{mariauror@gmail.com}
-#' @references \url{https://github.com/aurora-mareviv/mthapower}
 
 #' To determine the minimum number of cases (Ncmin), required to detect: either a change from p0 to p1, or a given OR, with a predefined confidence interval, in a study with Nh haplogroups.
 #' Note: I assume that case-control equations are valid for a cohort.
@@ -15,6 +13,10 @@
 #' sig.level: error alpha accepted. Can take 3 possible values: 0.05, 0.01 and 0.001 (see [Table 2] of Samuels et al.)
 #' cases.min: number of cases or controls that I need to recruit.
 #' Gives the result in a data frame, easy to print in a plot.
+
+#' @author Aurora Baluja, \email{mariauror@gmail.com}
+#' @references \url{https://github.com/aurora-mareviv/mthapower}
+#' @references \url{http://www.cell.com/ajhg/fulltext/S0002-9297(07)63709-4}
 
 mthacases <-
 function(p0=p0, Nh=Nh, OR.cas.ctrl=OR.cas.ctrl, power=power, sig.level=sig.level){
