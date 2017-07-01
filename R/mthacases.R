@@ -1,5 +1,5 @@
 
-#' To determine the minimum number of cases (Ncmin), required to detect: either a change from p0 to p1, or a given OR, with a predefined confidence interval, in a study with Nh haplogroups.
+#' Determine the minimum number of cases (Ncmin), required to detect: either a change from p0 to p1, or a given OR, with a predefined confidence interval, in a study with Nh haplogroups.
 #' Note: I assume that case-control equations are valid for a cohort.
 #' This function may not be generalizable for all studies.
 
