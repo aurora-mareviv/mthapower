@@ -12,7 +12,7 @@ License: GNU-GPL v3
 Encoding: UTF-8
 LazyData: true
 Suggests:
-    ggplot,
+    ggplot2,
     car
 URL: ttps://github.com/aurora-mareviv/mthapower
 BugReports: ttps://github.com/aurora-mareviv/mthapower/issues

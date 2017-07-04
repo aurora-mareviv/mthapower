@@ -1,5 +1,5 @@
 #' Post-hoc power calculations - mtDNA haplogroups
-
+#'
 #' For a GIVEN STUDY SIZE Ncmin <- n.cases, use the equation to determine minimum value of change p0 to p1 (or minimum OR), that can be detected with desired power and significance level, in a study with Nh haplogroups.
 #' Note: I assume that case-control equations may be valid for cohorts, equally "divided" between cases and controls.
 # USAGE:
@@ -30,6 +30,7 @@
 #' # Adds column OR to binded data frame:
 #' bindata$OR <- rep(factor(c(1.50,1.75,2,2.5)),times = c(nrow(pow.H150),nrow(pow.H175),nrow(pow.H200),nrow(pow.H250)))
 #' # Create plot:
+#' # install.packages("car")
 #' library(car)
 #' scatterplot(power~ncases | OR, reg.line=FALSE, smooth=FALSE, spread=FALSE,
 #'             boxplots=FALSE, span=0.25, by.groups=FALSE, data=bindata)
