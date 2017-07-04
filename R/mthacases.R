@@ -1,22 +1,36 @@
+#' Sample size calculations - mtDNA haplogroups
 
 #' Determine the minimum number of cases (Ncmin), required to detect: either a change from p0 to p1, or a given OR, with a predefined confidence interval, in a study with Nh haplogroups.
 #' Note: I assume that case-control equations are valid for a cohort.
 #' This function may not be generalizable for all studies.
 
 #' USAGE:
-#' p0: the frequency of the haplogroup in the control population, the controls among exposed.
-#' It depends on haplogroup baseline frequency.
-#' Nh: number of categories for haplogroups. Usually 10 haplogroups plus one category for rare haplogrs.: Nh <- 11
-#' OR.cas.ctrl: (p1 / (1-p1)) / (p0 / (1-p0)) the OR you want to detect with your data.
-#' It can be either a single value, or a sequence: OR.cas.ctrl <- 2; OR.cas.ctrl <- seq(1.25,3 by=0.5)
-#' power: the power I want to detect any OR in my study.
-#' sig.level: error alpha accepted. Can take 3 possible values: 0.05, 0.01 and 0.001 (see [Table 2] of Samuels et al.)
-#' cases.min: number of cases or controls that I need to recruit.
+#' @param p0 the frequency of the haplogroup in the control population, the controls among exposed. It depends on haplogroup baseline frequency.
+#' @param Nh number of categories for haplogroups. Usually 10 haplogroups plus one category for rare haplogrs.: Nh <- 11
+#' @param OR.cas.ctrl (p1 / (1-p1)) / (p0 / (1-p0)) the OR you want to detect with your data. It can be either a single value, or a sequence: OR.cas.ctrl <- 2; OR.cas.ctrl <- seq(1.25,3 by=0.5)
+#' @param power the power I want to detect any OR in my study.
+#' @param sig.level error alpha accepted. Can take 3 possible values: 0.05, 0.01 and 0.001 (see [Table 2] of Samuels et al.)
+#' @param cases.min number of cases or controls that I need to recruit.
+
 #' Gives the result in a data frame, easy to print in a plot.
 
+#' @examples
+#' mydata <- mthacases(p0=0.445, Nh=11, OR.cas.ctrl=c(2), power=80, sig.level=0.05) # Baudouin
+#' mydata <- mthacases(p0=0.445, Nh=11, OR.cas.ctrl=c(1.25,1.5,1.75,2,2.25,2.5,2.75,3), power=80, sig.level=0.05)
+#' mydata <- mydata[c(2,6)]
+#' mydata
+#' plot(mydata)
+#'
+#' @export
+mthacases <-
+  function(p0=p0, Nh=Nh, OR.cas.ctrl=OR.cas.ctrl, power=power, sig.level=sig.level)
+  { ... }
+
+
+#'
 #' @author Aurora Baluja, \email{mariauror@gmail.com}
-#' @references \url{https://github.com/aurora-mareviv/mthapower}
 #' @references \url{http://www.cell.com/ajhg/fulltext/S0002-9297(07)63709-4}
+#' @references \url{https://github.com/aurora-mareviv/mthapower}
 
 mthacases <-
 function(p0=p0, Nh=Nh, OR.cas.ctrl=OR.cas.ctrl, power=power, sig.level=sig.level){
