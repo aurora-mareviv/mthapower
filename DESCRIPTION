@@ -16,4 +16,4 @@ Suggests:
     car
 URL: ttps://github.com/aurora-mareviv/mthapower
 BugReports: ttps://github.com/aurora-mareviv/mthapower/issues
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1

@@ -11,9 +11,10 @@
 #' @param power the power I want to detect any OR in my study.
 #' @param sig.level error alpha accepted. Can take 3 possible values: 0.05, 0.01 and 0.001 (see [Table 2] of Samuels et al.)
 #' @param cases.min number of cases or controls that I need to recruit.
-
+#'
 #' Gives the result in a data frame, easy to print in a plot.
-
+#' @return None
+#'
 #' @examples
 #' mydata <- mthacases(p0=0.445, Nh=11, OR.cas.ctrl=c(2), power=80, sig.level=0.05) # Baudouin
 #' mydata <- mthacases(p0=0.445, Nh=11, OR.cas.ctrl=c(1.25,1.5,1.75,2,2.25,2.5,2.75,3), power=80, sig.level=0.05)
