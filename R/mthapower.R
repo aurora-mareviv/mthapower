@@ -1,18 +1,21 @@
 #' Post-hoc power calculations - mtDNA haplogroups
 #'
-#' For a GIVEN STUDY SIZE Ncmin <- n.cases, use the equation to determine minimum value of change p0 to p1 (or minimum OR), that can be detected with desired power and significance level, in a study with Nh haplogroups.
+#' For a given study size, determine the minimum effect size that can be detected with the desired power and significance level, in a study with Nh haplogroups.
 #' Note: I assume that case-control equations may be valid for cohorts, equally "divided" between cases and controls.
-# USAGE:
+#
 #' @param n.cases number of cases or controls from the study. It can be either a single value, or a sequence: n.cases <- 300; n.cases <- seq(50,500 by=10)
 #' @param p0 the frequency of the haplogroup in the control population, the controls among exposed. It depends on haplogroup baseline frequency.
 #' @param Nh number of categories for haplogroups. Usually 10 haplogroups plus one category for rare haplogrs.: Nh <- 11.
 #' @param OR.cas.ctrl (p1 / (1-p1)) / (p0 / (1-p0)) the OR you want to detect with your data.
 #' @param sig.level error alpha accepted. Can take 3 possible values: 0.05, 0.01 and 0.001 (see [Table 2] of Samuels et al.)
 #'
-#' Calculates power given number of cases and other parameters.
-#' Output is an object of class data.frame, ready to plot.
 #'
-#' @return None
+#' @author Aurora Baluja, \email{mariauror@gmail.com}
+#' @references \url{http://www.cell.com/ajhg/fulltext/S0002-9297(07)63709-4}
+#' @references \url{https://github.com/aurora-mareviv/mthapower}
+#'
+#'
+#' @return Calculates power given number of cases and other parameters. The output is an object of class data.frame, ready to plot.
 #'
 #' @examples
 #' # Example 1:
@@ -40,12 +43,6 @@ mthapower <-
   function(n.cases=ncases, p0=p0, Nh=Nh, OR.cas.ctrl=OR.cas.ctrl, sig.level=sig.level)
   { ... }
 
-
-#'
-#' @author Aurora Baluja, \email{mariauror@gmail.com}
-#' @references \url{http://www.cell.com/ajhg/fulltext/S0002-9297(07)63709-4}
-#' @references \url{https://github.com/aurora-mareviv/mthapower}
-#'
 
 mthapower <-
 function(n.cases=ncases, p0=p0, Nh=Nh, OR.cas.ctrl=OR.cas.ctrl, sig.level=sig.level){
