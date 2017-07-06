@@ -35,12 +35,18 @@
 #' # Bind the three data frames:
 #' bindata <- rbind(pow.H150,pow.H175,pow.H200,pow.H250)
 #' # Adds column OR to binded data frame:
-#' bindata$OR <- rep(factor(c(1.50,1.75,2,2.5)),times = c(nrow(pow.H150),nrow(pow.H175),nrow(pow.H200),nrow(pow.H250)))
+#' bindata$OR <- rep(factor(c(1.50,1.75,2,2.5)),
+#'               times = c(nrow(pow.H150),
+#'                         nrow(pow.H175),
+#'                         nrow(pow.H200),
+#'                         nrow(pow.H250)))
 #' # Create plot:
 #' # install.packages("car")
 #' library(car)
-#' scatterplot(power~ncases | OR, reg.line=FALSE, smooth=FALSE, spread=FALSE,
-#'             boxplots=FALSE, span=0.25, by.groups=FALSE, data=bindata)
+#' scatterplot(power~ncases | OR, reg.line=FALSE,
+#'             smooth=FALSE, spread=FALSE,
+#'             boxplots=FALSE, span=0.25, by.groups=FALSE,
+#'             data=bindata)
 #'
 #' @export
 mthapower <-
