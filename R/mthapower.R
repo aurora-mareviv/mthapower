@@ -10,9 +10,10 @@
 #' @param sig.level error alpha accepted. Can take 3 possible values: 0.05, 0.01 and 0.001 (see [Table 2] of Samuels et al.)
 #'
 #'
-#' @author Aurora Baluja, \email{mariauror@gmail.com}
-#' @references \url{http://www.cell.com/ajhg/fulltext/S0002-9297(07)63709-4}
-#' @references \url{https://github.com/aurora-mareviv/mthapower}
+#' @author Author and maintainer: Aurora Baluja. Email: \email{mariauror@gmail.com}
+#' @references 1. David C. Samuels, Andrew D. Carothers, Robin Horton, Patrick F. Chinnery. The Power to Detect Disease Associations with Mitochondrial DNA Haplogroups. \url{http://www.cell.com/ajhg/fulltext/S0002-9297(07)63709-4}
+#' @references 2. Source: \url{https://github.com/aurora-mareviv/mthapower}
+#' @references 2. Shiny app: \url{https://aurora.shinyapps.io/mtDNA_power_calc}
 #'
 #'
 #' @return Calculates power given number of cases and other parameters. The output is an object of class data.frame, ready to plot.

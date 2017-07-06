@@ -58,10 +58,12 @@ scatterplot(power~ncases | OR, reg.line=FALSE,
 
 }
 \references{
-\url{http://www.cell.com/ajhg/fulltext/S0002-9297(07)63709-4}
+1. David C. Samuels, Andrew D. Carothers, Robin Horton, Patrick F. Chinnery. The Power to Detect Disease Associations with Mitochondrial DNA Haplogroups. \url{http://www.cell.com/ajhg/fulltext/S0002-9297(07)63709-4}
 
-\url{https://github.com/aurora-mareviv/mthapower}
+2. Source: \url{https://github.com/aurora-mareviv/mthapower}
+
+2. Shiny app: \url{https://aurora.shinyapps.io/mtDNA_power_calc}
 }
 \author{
-Aurora Baluja, \email{mariauror@gmail.com}
+Author and maintainer: Aurora Baluja. Email: \email{mariauror@gmail.com}
 }
