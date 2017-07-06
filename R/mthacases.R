@@ -15,7 +15,7 @@
 #' @author Author and maintainer: Aurora Baluja. Email: \email{mariauror@gmail.com}
 #' @references 1. David C. Samuels, Andrew D. Carothers, Robin Horton, Patrick F. Chinnery. The Power to Detect Disease Associations with Mitochondrial DNA Haplogroups. \url{http://www.cell.com/ajhg/fulltext/S0002-9297(07)63709-4}
 #' @references 2. Source: \url{https://github.com/aurora-mareviv/mthapower}
-#' @references 2. Shiny app: \url{https://aurora.shinyapps.io/mtDNA_power_calc}
+#' @references 3. Shiny app: \url{https://aurora.shinyapps.io/mtDNA_power_calc}
 #'
 #'
 #' @return Gives the result in a data frame, easy to print in a plot.

@@ -45,7 +45,7 @@ plot(mydata)
 
 2. Source: \url{https://github.com/aurora-mareviv/mthapower}
 
-2. Shiny app: \url{https://aurora.shinyapps.io/mtDNA_power_calc}
+3. Shiny app: \url{https://aurora.shinyapps.io/mtDNA_power_calc}
 }
 \author{
 Author and maintainer: Aurora Baluja. Email: \email{mariauror@gmail.com}
