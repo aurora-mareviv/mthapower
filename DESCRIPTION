@@ -8,7 +8,7 @@ Maintainer: Aurora Baluja <mariauror@gmail.com>
 Description: Calculate Sample Size and Post-hoc Power of
     Association Studies Involving Mitochondrial DNA Haplogroups.
     Based on formulae by Samuels et al. AJHG 2006 PMC1424681.
-License: License: GPL-3
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Suggests:
