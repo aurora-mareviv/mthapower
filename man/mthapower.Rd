@@ -8,7 +8,7 @@ mthapower(n.cases = ncases, p0 = p0, Nh = Nh, OR.cas.ctrl = OR.cas.ctrl,
   sig.level = sig.level)
 }
 \arguments{
-\item{n.cases}{number of cases or controls from the study. It can be either a single value, or a sequence: n.cases <- 300; n.cases <- seq(50,500 by=10)}
+\item{n.cases}{number of cases or controls from the study. It can be either a single value, or a sequence: \code{n.cases <- 300; n.cases <- seq(50,500 by=10)}}
 
 \item{p0}{the frequency of the haplogroup in the control population, the controls among exposed. It depends on haplogroup baseline frequency.}
 

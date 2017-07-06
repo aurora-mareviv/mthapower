@@ -1,11 +1,11 @@
 #' Post-hoc power calculations - mtDNA haplogroups
 #'
-#' For a given study size, determine the minimum effect size that can be detected with the desired power and significance level, in a study with Nh haplogroups.
+#' For a given study size, determine the minimum effect size that can be detected with the desired power and significance level, in a study with \code{Nh} haplogroups.
 #' Note: I assume that case-control equations may be valid for cohorts, equally "divided" between cases and controls.
 #
 #' @param n.cases number of cases or controls from the study. It can be either a single value, or a sequence: \code{n.cases <- 300; n.cases <- seq(50,500 by=10)}
 #' @param p0 the frequency of the haplogroup in the control population, the controls among exposed. It depends on haplogroup baseline frequency.
-#' @param Nh number of categories for haplogroups. Usually 10 haplogroups plus one category for rare haplogrs.: Nh <- 11.
+#' @param Nh number of categories for haplogroups. Usually 10 haplogroups plus one category for rare haplogroups: \code{Nh <- 11}.
 #' @param OR.cas.ctrl (p1 / (1-p1)) / (p0 / (1-p0)) the OR you want to detect with your data.
 #' @param sig.level error alpha accepted. Can take 3 possible values: 0.05, 0.01 and 0.001 (see [Table 2] of Samuels et al.)
 #'
