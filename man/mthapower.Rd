@@ -12,7 +12,7 @@ mthapower(n.cases = ncases, p0 = p0, Nh = Nh, OR.cas.ctrl = OR.cas.ctrl,
 
 \item{p0}{the frequency of the haplogroup in the control population, the controls among exposed. It depends on haplogroup baseline frequency.}
 
-\item{Nh}{number of categories for haplogroups. Usually 10 haplogroups plus one category for rare haplogrs.: Nh <- 11.}
+\item{Nh}{number of categories for haplogroups. Usually 10 haplogroups plus one category for rare haplogroups: \code{Nh <- 11}.}
 
 \item{OR.cas.ctrl}{(p1 / (1-p1)) / (p0 / (1-p0)) the OR you want to detect with your data.}
 
@@ -22,7 +22,7 @@ mthapower(n.cases = ncases, p0 = p0, Nh = Nh, OR.cas.ctrl = OR.cas.ctrl,
 Calculates power given number of cases and other parameters. The output is an object of class data.frame, ready to plot.
 }
 \description{
-For a given study size, determine the minimum effect size that can be detected with the desired power and significance level, in a study with Nh haplogroups.
+For a given study size, determine the minimum effect size that can be detected with the desired power and significance level, in a study with \code{Nh} haplogroups.
 Note: I assume that case-control equations may be valid for cohorts, equally "divided" between cases and controls.
 }
 \examples{
