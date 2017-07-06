@@ -2,11 +2,7 @@
 % Please edit documentation in R/mthacases.R
 \name{mthacases}
 \alias{mthacases}
-\title{Sample size calculations - mtDNA haplogroups
-Determine the minimum number of cases (Ncmin), required to detect: either a change from p0 to p1, or a given OR, with a predefined confidence interval, in a study with Nh haplogroups.
-Note: I assume that case-control equations are valid for a cohort.
-This function may not be generalizable for all studies.
-USAGE:}
+\title{Sample size calculations - mtDNA haplogroups}
 \usage{
 mthacases(p0 = p0, Nh = Nh, OR.cas.ctrl = OR.cas.ctrl, power = power,
   sig.level = sig.level)
@@ -22,19 +18,15 @@ mthacases(p0 = p0, Nh = Nh, OR.cas.ctrl = OR.cas.ctrl, power = power,
 
 \item{sig.level}{error alpha accepted. Can take 3 possible values: 0.05, 0.01 and 0.001 (see [Table 2] of Samuels et al.)}
 
-\item{cases.min}{number of cases or controls that I need to recruit.
-
-Gives the result in a data frame, easy to print in a plot.}
+\item{cases.min}{number of cases or controls that I need to recruit.}
 }
 \value{
-None
+Gives the result in a data frame, easy to print in a plot.
 }
 \description{
-Sample size calculations - mtDNA haplogroups
 Determine the minimum number of cases (Ncmin), required to detect: either a change from p0 to p1, or a given OR, with a predefined confidence interval, in a study with Nh haplogroups.
 Note: I assume that case-control equations are valid for a cohort.
 This function may not be generalizable for all studies.
-USAGE:
 }
 \examples{
 mydata <- mthacases(p0=0.445, Nh=11, OR.cas.ctrl=c(2), power=80, sig.level=0.05) # Baudouin
@@ -43,4 +35,12 @@ mydata <- mydata[c(2,6)]
 mydata
 plot(mydata)
 
+}
+\references{
+\url{http://www.cell.com/ajhg/fulltext/S0002-9297(07)63709-4}
+
+\url{https://github.com/aurora-mareviv/mthapower}
+}
+\author{
+Aurora Baluja, \email{mariauror@gmail.com}
 }

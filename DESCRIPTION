@@ -1,19 +1,19 @@
 Package: mthapower
 Type: Package
 Title: Sample Size and Post-hoc Power of Association Studies Involving
-    Mitochondrial DNA Haplogroups.
+    Mitochondrial DNA Haplogroups
 Version: 0.1.0
 Author: Aurora Baluja
 Maintainer: Aurora Baluja <mariauror@gmail.com>
 Description: Calculate Sample Size and Post-hoc Power of
     Association Studies Involving Mitochondrial DNA Haplogroups.
     Based on formulae by Samuels et al. AJHG 2006 PMC1424681.
-License: GNU-GPL v3
+License: License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Suggests:
     ggplot2,
     car
 URL: ttps://github.com/aurora-mareviv/mthapower
-BugReports: ttps://github.com/aurora-mareviv/mthapower/issues
+BugReports: https://github.com/aurora-mareviv/mthapower/issues
 RoxygenNote: 6.0.1

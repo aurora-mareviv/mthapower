@@ -2,9 +2,7 @@
 % Please edit documentation in R/mthapower.R
 \name{mthapower}
 \alias{mthapower}
-\title{Post-hoc power calculations - mtDNA haplogroups
-For a GIVEN STUDY SIZE Ncmin <- n.cases, use the equation to determine minimum value of change p0 to p1 (or minimum OR), that can be detected with desired power and significance level, in a study with Nh haplogroups.
-Note: I assume that case-control equations may be valid for cohorts, equally "divided" between cases and controls.}
+\title{Post-hoc power calculations - mtDNA haplogroups}
 \usage{
 mthapower(n.cases = ncases, p0 = p0, Nh = Nh, OR.cas.ctrl = OR.cas.ctrl,
   sig.level = sig.level)
@@ -18,17 +16,13 @@ mthapower(n.cases = ncases, p0 = p0, Nh = Nh, OR.cas.ctrl = OR.cas.ctrl,
 
 \item{OR.cas.ctrl}{(p1 / (1-p1)) / (p0 / (1-p0)) the OR you want to detect with your data.}
 
-\item{sig.level}{error alpha accepted. Can take 3 possible values: 0.05, 0.01 and 0.001 (see [Table 2] of Samuels et al.)
-
-Calculates power given number of cases and other parameters.
-Output is an object of class data.frame, ready to plot.}
+\item{sig.level}{error alpha accepted. Can take 3 possible values: 0.05, 0.01 and 0.001 (see [Table 2] of Samuels et al.)}
 }
 \value{
-None
+Calculates power given number of cases and other parameters. The output is an object of class data.frame, ready to plot.
 }
 \description{
-Post-hoc power calculations - mtDNA haplogroups
-For a GIVEN STUDY SIZE Ncmin <- n.cases, use the equation to determine minimum value of change p0 to p1 (or minimum OR), that can be detected with desired power and significance level, in a study with Nh haplogroups.
+For a given study size, determine the minimum effect size that can be detected with the desired power and significance level, in a study with Nh haplogroups.
 Note: I assume that case-control equations may be valid for cohorts, equally "divided" between cases and controls.
 }
 \examples{
@@ -52,4 +46,12 @@ library(car)
 scatterplot(power~ncases | OR, reg.line=FALSE, smooth=FALSE, spread=FALSE,
             boxplots=FALSE, span=0.25, by.groups=FALSE, data=bindata)
 
+}
+\references{
+\url{http://www.cell.com/ajhg/fulltext/S0002-9297(07)63709-4}
+
+\url{https://github.com/aurora-mareviv/mthapower}
+}
+\author{
+Aurora Baluja, \email{mariauror@gmail.com}
 }

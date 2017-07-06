@@ -23,10 +23,14 @@
 #'
 #' # Example 2:
 #' # Create data frames
-#' pow.H150 <- mthapower(n.cases=seq(50,1000,by=50), p0=0.433, Nh=11, OR.cas.ctrl=1.5, sig.level=0.05)
-#' pow.H175 <- mthapower(n.cases=seq(50,1000,by=50), p0=0.433, Nh=11, OR.cas.ctrl=1.75, sig.level=0.05)
-#' pow.H200 <- mthapower(n.cases=seq(50,1000,by=50), p0=0.433, Nh=11, OR.cas.ctrl=2, sig.level=0.05)
-#' pow.H250 <- mthapower(n.cases=seq(50,1000,by=50), p0=0.433, Nh=11, OR.cas.ctrl=2.5, sig.level=0.05)
+#' pow.H150 <- mthapower(n.cases=seq(50,1000,by=50), p0=0.433, Nh=11,
+#'                       OR.cas.ctrl=1.5, sig.level=0.05)
+#' pow.H175 <- mthapower(n.cases=seq(50,1000,by=50), p0=0.433, Nh=11,
+#'                       OR.cas.ctrl=1.75, sig.level=0.05)
+#' pow.H200 <- mthapower(n.cases=seq(50,1000,by=50), p0=0.433, Nh=11,
+#'                       OR.cas.ctrl=2, sig.level=0.05)
+#' pow.H250 <- mthapower(n.cases=seq(50,1000,by=50), p0=0.433, Nh=11,
+#'                       OR.cas.ctrl=2.5, sig.level=0.05)
 #'
 #' # Bind the three data frames:
 #' bindata <- rbind(pow.H150,pow.H175,pow.H200,pow.H250)
