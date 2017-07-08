@@ -39,11 +39,11 @@ plot(mydata)
 
 }
 \references{
-1. DC Samuels, AD Carothers, R Horton, PF Chinnery. The Power to Detect Disease Associations with Mitochondrial DNA Haplogroups. AJHG, 2006. 78(4):713-720. DOI:10.1086/502682. \url{https://www.ncbi.nlm.nih.gov/pmc/PMC1424681}.
+1. DC Samuels, AD Carothers, R Horton, PF Chinnery. The Power to Detect Disease Associations with Mitochondrial DNA Haplogroups. AJHG, 2006. 78(4):713-720. \href{https://www.ncbi.nlm.nih.gov/pmc/PMC1424681}{DOI:10.1086/502682}.
 
-2. Source code: \url{https://github.com/aurora-mareviv/mthapower}.
+2. Source code: \href{https://github.com/aurora-mareviv/mthapower}{github.com/aurora-mareviv/mthapower}.
 
-3. Shiny app: \url{https://aurora.shinyapps.io/mtDNA_power_calc}.
+3. Shiny app: \href{https://aurora.shinyapps.io/mtDNA_power_calc}{aurora.shinyapps.io/mtDNA_power_calc}.
 }
 \author{
 Author and maintainer: Aurora Baluja. Email: \email{mariauror@gmail.com}

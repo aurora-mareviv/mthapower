@@ -5,7 +5,7 @@ Title: Sample Size and Post-Hoc Power of Association Studies Involving
 Version: 0.1.0
 Author: Aurora Baluja
 Maintainer: Aurora Baluja <mariauror@gmail.com>
-Description: Calculate Sample Size and Post-hoc Power of
+Description: Calculate Sample Size and Post-Hoc Power of
     Association Studies Involving Mitochondrial DNA Haplogroups.
     Based on formulae by Samuels et al. AJHG 2006 PMC1424681.
 License: GPL-3
