@@ -12,9 +12,9 @@
 #'
 #'
 #' @author Author and maintainer: Aurora Baluja. Email: \email{mariauror@gmail.com}
-#' @references 1. David C. Samuels, Andrew D. Carothers, Robin Horton, Patrick F. Chinnery. The Power to Detect Disease Associations with Mitochondrial DNA Haplogroups. AJHG, 2006. 78(4):713-720. \url{https://www.ncbi.nlm.nih.gov/pmc/PMC1424681}
-#' @references 2. Source code: \url{https://github.com/aurora-mareviv/mthapower}
-#' @references 3. Shiny app: \url{https://aurora.shinyapps.io/mtDNA_power_calc}
+#' @references 1. DC Samuels, AD Carothers, R Horton, PF Chinnery. The Power to Detect Disease Associations with Mitochondrial DNA Haplogroups. AJHG, 2006. 78(4):713-720. DOI:10.1086/502682. \url{https://www.ncbi.nlm.nih.gov/pmc/PMC1424681}.
+#' @references 2. Source code: \url{https://github.com/aurora-mareviv/mthapower}.
+#' @references 3. Shiny app: \url{https://aurora.shinyapps.io/mtDNA_power_calc}.
 #'
 #'
 #' @return Calculates power given number of cases and other parameters. The output is an object of class data.frame, ready to plot.
