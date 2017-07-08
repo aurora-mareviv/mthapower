@@ -1,15 +1,14 @@
 #' Sample size calculations - mtDNA haplogroups
 #'
-#' Determine the minimum number of cases (\code{Ncmin}), required to detect: either a change from p0 (haplogroup frequency in controls) to p1 (haplogroup frequency in cases), or a given OR, with a predefined confidence interval, in a study with \code{Nh} haplogroups.
+#' Determine the minimum number of cases (\code{Ncmin}), required to detect: either a change from \code{p0} (haplogroup frequency in controls) to \code{p1} (haplogroup frequency in cases), or a given OR, with a predefined confidence interval, in a study with \code{Nh} haplogroups.
 #' Note: I assume that case-control equations are valid for cohorts with a balanced number of cases and controls.
 #' This function may not be generalizable for all studies involving mtDNA haplogroups.
 #'
 #' @param p0 the frequency of the haplogroup in the control population, (that is, the controls among exposed). It depends on haplogroup baseline frequency.
-#' @param Nh number of categories for haplogroups. Usually 10 haplogroups plus one category for rare haplogrs.: \code{Nh <- 11}
+#' @param Nh number of categories for haplogroups. Usually 10 haplogroups plus one category for rare haplogroups: \code{Nh <- 11}.
 #' @param OR.cas.ctrl \code{(p1 / (1-p1)) / (p0 / (1-p0))} the OR you want to detect with your data. It can be either a single value, or a sequence: \code{OR.cas.ctrl <- 2}; \code{OR.cas.ctrl <- seq(1.25,3 by=0.5)}.
-#' @param power the power I want for detecting a given OR in my study (usually 80%-90%).
+#' @param power the power I want for detecting a given OR in my study (usually 80-90).
 #' @param sig.level the alpha error accepted. Can take 3 possible values: \code{0.05}, \code{0.01} and \code{0.001} (see [Table 2] of Samuels et al).
-#' @param cases.min number of cases or controls that I need to recruit.
 #'
 #'
 #' @author Author and maintainer: Aurora Baluja. Email: \email{mariauror@gmail.com}
