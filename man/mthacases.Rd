@@ -8,15 +8,15 @@ mthacases(p0 = p0, Nh = Nh, OR.cas.ctrl = OR.cas.ctrl, power = power,
   sig.level = sig.level)
 }
 \arguments{
-\item{p0}{the frequency of the haplogroup in the control population, the controls among exposed. It depends on haplogroup baseline frequency.}
+\item{p0}{the frequency of the haplogroup in the control population, (that is, the controls among exposed). It depends on haplogroup baseline frequency.}
 
-\item{Nh}{number of categories for haplogroups. Usually 10 haplogroups plus one category for rare haplogrs.: Nh <- 11}
+\item{Nh}{number of categories for haplogroups. Usually 10 haplogroups plus one category for rare haplogrs.: \code{Nh <- 11}}
 
-\item{OR.cas.ctrl}{\code{(p1 / (1-p1)) / (p0 / (1-p0))} the OR you want to detect with your data. It can be either a single value, or a sequence: \code{OR.cas.ctrl <- 2; OR.cas.ctrl <- seq(1.25,3 by=0.5)}}
+\item{OR.cas.ctrl}{\code{(p1 / (1-p1)) / (p0 / (1-p0))} the OR you want to detect with your data. It can be either a single value, or a sequence: \code{OR.cas.ctrl <- 2}; \code{OR.cas.ctrl <- seq(1.25,3 by=0.5)}.}
 
-\item{power}{the power I want to detect any OR in my study.}
+\item{power}{the power I want for detecting a given OR in my study (usually 80%-90%).}
 
-\item{sig.level}{error alpha accepted. Can take 3 possible values: 0.05, 0.01 and 0.001 (see [Table 2] of Samuels et al.)}
+\item{sig.level}{the alpha error accepted. Can take 3 possible values: \code{0.05}, \code{0.01} and \code{0.001} (see [Table 2] of Samuels et al).}
 
 \item{cases.min}{number of cases or controls that I need to recruit.}
 }
@@ -24,9 +24,9 @@ mthacases(p0 = p0, Nh = Nh, OR.cas.ctrl = OR.cas.ctrl, power = power,
 Gives the result in a data frame, easy to print in a plot.
 }
 \description{
-Determine the minimum number of cases (\code{Ncmin}), required to detect: either a change from p0 to p1, or a given OR, with a predefined confidence interval, in a study with \code{Nh} haplogroups.
-Note: I assume that case-control equations are valid for a cohort.
-This function may not be generalizable for all studies.
+Determine the minimum number of cases (\code{Ncmin}), required to detect: either a change from p0 (haplogroup frequency in controls) to p1 (haplogroup frequency in cases), or a given OR, with a predefined confidence interval, in a study with \code{Nh} haplogroups.
+Note: I assume that case-control equations are valid for cohorts with a balanced number of cases and controls.
+This function may not be generalizable for all studies involving mtDNA haplogroups.
 }
 \examples{
 mydata <- mthacases(p0=0.445, Nh=11,
@@ -41,7 +41,7 @@ plot(mydata)
 
 }
 \references{
-1. David C. Samuels, Andrew D. Carothers, Robin Horton, Patrick F. Chinnery. The Power to Detect Disease Associations with Mitochondrial DNA Haplogroups. \url{http://www.cell.com/ajhg/fulltext/S0002-9297(07)63709-4}
+1. David C. Samuels, Andrew D. Carothers, Robin Horton, Patrick F. Chinnery. The Power to Detect Disease Associations with Mitochondrial DNA Haplogroups. \url{https://www.ncbi.nlm.nih.gov/pmc/PMC1424681/}
 
 2. Source: \url{https://github.com/aurora-mareviv/mthapower}
 

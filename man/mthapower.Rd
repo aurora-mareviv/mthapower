@@ -8,7 +8,7 @@ mthapower(n.cases = ncases, p0 = p0, Nh = Nh, OR.cas.ctrl = OR.cas.ctrl,
   sig.level = sig.level)
 }
 \arguments{
-\item{n.cases}{number of cases or controls from the study. It can be either a single value, or a sequence: \code{n.cases <- 300; n.cases <- seq(50,500 by=10)}}
+\item{n.cases}{number of cases or controls from the study. It can be either a single value, or a sequence: \code{n.cases <- 300}; \code{n.cases <- seq(50,500 by=10)}.}
 
 \item{p0}{the frequency of the haplogroup in the control population, the controls among exposed. It depends on haplogroup baseline frequency.}
 
@@ -16,14 +16,15 @@ mthapower(n.cases = ncases, p0 = p0, Nh = Nh, OR.cas.ctrl = OR.cas.ctrl,
 
 \item{OR.cas.ctrl}{(p1 / (1-p1)) / (p0 / (1-p0)) the OR you want to detect with your data.}
 
-\item{sig.level}{error alpha accepted. Can take 3 possible values: 0.05, 0.01 and 0.001 (see [Table 2] of Samuels et al.)}
+\item{sig.level}{the alpha error accepted. Can take 3 possible values: \code{0.05}, \code{0.01} and \code{0.001} (see [Table 2] of Samuels et al).}
 }
 \value{
 Calculates power given number of cases and other parameters. The output is an object of class data.frame, ready to plot.
 }
 \description{
 For a given study size, determine the minimum effect size that can be detected with the desired power and significance level, in a study with \code{Nh} haplogroups.
-Note: I assume that case-control equations may be valid for cohorts, equally "divided" between cases and controls.
+Note: I assume that case-control equations are valid for cohorts with a balanced number of cases and controls.
+This function may not be generalizable for all studies involving mtDNA haplogroups.
 }
 \examples{
 # Example 1:
@@ -58,7 +59,7 @@ scatterplot(power~ncases | OR, reg.line=FALSE,
 
 }
 \references{
-1. David C. Samuels, Andrew D. Carothers, Robin Horton, Patrick F. Chinnery. The Power to Detect Disease Associations with Mitochondrial DNA Haplogroups. \url{http://www.cell.com/ajhg/fulltext/S0002-9297(07)63709-4}
+1. David C. Samuels, Andrew D. Carothers, Robin Horton, Patrick F. Chinnery. The Power to Detect Disease Associations with Mitochondrial DNA Haplogroups. \url{https://www.ncbi.nlm.nih.gov/pmc/PMC1424681/}
 
 2. Source: \url{https://github.com/aurora-mareviv/mthapower}
 
