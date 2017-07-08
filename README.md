@@ -1,5 +1,5 @@
 # mthapower
-Calculate sample size and post-hoc power of association studies involving mitochondrial DNA haplogroups - Based on Samuels et al. AJHG 2006
+Calculate sample size and post-hoc power of association studies involving mitochondrial DNA haplogroups - Based on Samuels et al. AJHG, 2006. 78(4):713-720. DOI:10.1086/502682
 
 ## Installation
 `devtools::install_github('aurora-mareviv/mthapower')`
