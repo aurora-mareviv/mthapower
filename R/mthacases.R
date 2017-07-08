@@ -12,8 +12,8 @@
 #'
 #'
 #' @author Author and maintainer: Aurora Baluja. Email: \email{mariauror@gmail.com}
-#' @references 1. David C. Samuels, Andrew D. Carothers, Robin Horton, Patrick F. Chinnery. The Power to Detect Disease Associations with Mitochondrial DNA Haplogroups. \url{https://www.ncbi.nlm.nih.gov/pmc/PMC1424681/}
-#' @references 2. Source: \url{https://github.com/aurora-mareviv/mthapower}
+#' @references 1. David C. Samuels, Andrew D. Carothers, Robin Horton, Patrick F. Chinnery. The Power to Detect Disease Associations with Mitochondrial DNA Haplogroups. AJHG, 2006. 78(4):713-720. \url{https://www.ncbi.nlm.nih.gov/pmc/PMC1424681}
+#' @references 2. Source code: \url{https://github.com/aurora-mareviv/mthapower}
 #' @references 3. Shiny app: \url{https://aurora.shinyapps.io/mtDNA_power_calc}
 #'
 #'
