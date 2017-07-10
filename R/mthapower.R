@@ -5,7 +5,7 @@
 #' This function may not be generalizable for all studies involving mtDNA haplogroups.
 #
 #' @param n.cases number of cases or controls from the study. It can be either a single value, or a sequence: \code{n.cases <- 300}; \code{n.cases <- seq(50,500 by=10)}.
-#' @param p0 the frequency of the haplogroup in the control population, the controls among exposed. It depends on haplogroup baseline frequency.
+#' @param p0 the frequency of the haplogroup in the control population. It depends on haplogroup baseline frequency.
 #' @param Nh number of categories for haplogroups. Usually 10 haplogroups plus one category for rare haplogroups: \code{Nh <- 11}.
 #' @param OR.cas.ctrl (p1 / (1-p1)) / (p0 / (1-p0)) the OR you want to detect with your data.
 #' @param sig.level the alpha error accepted. Can take 3 possible values: \code{0.05}, \code{0.01} and \code{0.001} (see [Table 2] of Samuels et al).
@@ -17,7 +17,7 @@
 #' @references 3. Shiny app: \href{https://aurora.shinyapps.io/mtDNA_power_calc}{aurora.shinyapps.io/mtDNA_power_calc}.
 #'
 #'
-#' @return Calculates power given number of cases and other parameters. The output is an object of class data.frame, ready to plot.
+#' @return Calculates post-hoc power given the number of cases and other parameters. The output is an object of class \code{data.frame}, ready to plot.
 #'
 #' @examples
 #' # Example 1:

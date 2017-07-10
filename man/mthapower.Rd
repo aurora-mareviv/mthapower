@@ -10,7 +10,7 @@ mthapower(n.cases = ncases, p0 = p0, Nh = Nh, OR.cas.ctrl = OR.cas.ctrl,
 \arguments{
 \item{n.cases}{number of cases or controls from the study. It can be either a single value, or a sequence: \code{n.cases <- 300}; \code{n.cases <- seq(50,500 by=10)}.}
 
-\item{p0}{the frequency of the haplogroup in the control population, the controls among exposed. It depends on haplogroup baseline frequency.}
+\item{p0}{the frequency of the haplogroup in the control population. It depends on haplogroup baseline frequency.}
 
 \item{Nh}{number of categories for haplogroups. Usually 10 haplogroups plus one category for rare haplogroups: \code{Nh <- 11}.}
 
@@ -19,7 +19,7 @@ mthapower(n.cases = ncases, p0 = p0, Nh = Nh, OR.cas.ctrl = OR.cas.ctrl,
 \item{sig.level}{the alpha error accepted. Can take 3 possible values: \code{0.05}, \code{0.01} and \code{0.001} (see [Table 2] of Samuels et al).}
 }
 \value{
-Calculates power given number of cases and other parameters. The output is an object of class data.frame, ready to plot.
+Calculates post-hoc power given the number of cases and other parameters. The output is an object of class \code{data.frame}, ready to plot.
 }
 \description{
 For a given study size, determine the minimum effect size that can be detected with the desired power and significance level, in a study with \code{Nh} haplogroups.

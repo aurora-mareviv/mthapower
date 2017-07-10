@@ -10,11 +10,11 @@ mthacases(p0 = p0, Nh = Nh, OR.cas.ctrl = OR.cas.ctrl, power = power,
 \arguments{
 \item{p0}{the frequency of the haplogroup in the control population, (that is, the controls among exposed). It depends on haplogroup baseline frequency.}
 
-\item{Nh}{number of categories for haplogroups. Usually 10 haplogroups plus one category for rare haplogroups: \code{Nh <- 11}.}
+\item{Nh}{number of haplogroup categories. Usually 10 haplogroups plus one category for rare haplogroups: \code{Nh <- 11}.}
 
 \item{OR.cas.ctrl}{\code{(p1 / (1-p1)) / (p0 / (1-p0))} the OR you want to detect with your data. It can be either a single value, or a sequence: \code{OR.cas.ctrl <- 2}; \code{OR.cas.ctrl <- seq(1.25,3 by=0.5)}.}
 
-\item{power}{the power I want for detecting a given OR in my study (usually 80-90).}
+\item{power}{the power to detect a given OR in my study (usually 80-90).}
 
 \item{sig.level}{the alpha error accepted. Can take 3 possible values: \code{0.05}, \code{0.01} and \code{0.001} (see [Table 2] of Samuels et al).}
 }
