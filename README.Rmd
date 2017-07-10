@@ -27,8 +27,12 @@ devtools::install_github("aurora-mareviv/mthapower")
 
 ## Shiny app
 - Shinyapps.io: [mtDNA_power_calc](https://aurora.shinyapps.io/mtDNA_power_calc/)
-- Run from Gist: `shiny::runGist('5895082')`
+- Run from Gist: 
 
+```{r gh-rungist, eval = FALSE}
+# install.packages("shiny")
+shiny::runGist('5895082')
+```
 
 <!--## Example
 

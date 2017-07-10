@@ -19,7 +19,12 @@ Shiny app
 ---------
 
 -   Shinyapps.io: [mtDNA\_power\_calc](https://aurora.shinyapps.io/mtDNA_power_calc/)
--   Run from Gist: `shiny::runGist('5895082')`
+-   Run from Gist:
+
+``` r
+# install.packages("shiny")
+shiny::runGist('5895082')
+```
 
 <!--## Example
 
