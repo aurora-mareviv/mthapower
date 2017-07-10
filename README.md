@@ -21,11 +21,13 @@ Shiny app
 -   Shinyapps.io: [mtDNA\_power\_calc](https://aurora.shinyapps.io/mtDNA_power_calc/)
 -   Run from Gist: `shiny::runGist('5895082')`
 
-Example
--------
+<!--## Example
 
 This is a basic example which shows you how to solve a common problem:
 
-``` r
+
+```r
 ## basic example code
 ```
+
+-->
