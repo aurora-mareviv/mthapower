@@ -37,7 +37,7 @@ vignettes/*.pdf
 # Files from an R project
 .Rproj.user
 .Ruserdata
-
+README.html
 
 ####### MacOSX
 
