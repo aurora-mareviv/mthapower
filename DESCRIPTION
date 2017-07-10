@@ -14,6 +14,6 @@ LazyData: true
 Suggests:
     ggplot2,
     car
-URL: ttps://github.com/aurora-mareviv/mthapower
+URL: https://github.com/aurora-mareviv/mthapower
 BugReports: https://github.com/aurora-mareviv/mthapower/issues
 RoxygenNote: 6.0.1
