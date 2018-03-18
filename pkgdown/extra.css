@@ -144,13 +144,11 @@ a:hover{
 
 
 /*highlight small tweaks for code snippets*/
-
  .sourceCode, .usage, .input, .output, .examples {
    background-color: var(--darkGrey-background) !important;
    color: var(--lightGrey-code) !important;
    border-radius: 10px;
 }
-
 /*code{
    background-color: var(--darkGrey-background) !important;
    color: var(--lightGrey-code) !important;
@@ -163,23 +161,31 @@ a:hover{
 .output > .co{
    color: var(--darkGrey-code) !important;
 }
-.sourceCode > .kw, .usage > .kw, .input > .kw, .output > .kw {
-   color: var(--lightRed-hover) !important;
+.sourceCode > .kw, .usage > .kw, .input > .kw, .output > .kw,
+.sourceCode > .kw > .a,
+.usage > .kw > .a,
+.input  > .kw > .a,
+.output  > .kw > .a {
+   color: var(--lightBlue-hover) !important;
+}
+.sourceCode  > .st, .usage  > .st, .input > .st, .output > .st {
+   color: var(--lightBlue-hover) !important;
 }
 .sourceCode > .ot, .usage > .ot, .input  > .ot, .output  > .ot {
-   color: var(--lightOrange) !important;
+   color: var(--lightRed-hover) !important;
 }
 .sourceCode > .fl, .usage > .fl, .input > .fl, .output > .fl,
 .sourceCode > .dv, .usage > .dv, .input > .dv, .output > .dv {
    color: var(--lightOrange) !important;
 }
-.sourceCode  > .st, .usage  > .st, .input > .st, .output > .st {
-   color: var(--lightBlue-hover) !important;
+.sourceCode > .no, .usage > .no, .input > .no, .output > .no {
+   color: var(--lightGrey-code) !important;
 }
-.sourceCode > .kw > .a,
-.usage > .kw > .a,
-.input  > .kw > .a,
-.output  > .kw > .a,
+
+.sourceCode > .no > .a,
+.usage > .no > .a,
+.input  > .no > .a,
+.output  > .no > .a,
 .sourceCode > .fu, .usage > .fu, .input > .fu, .output > .fu {
    color: var(--lightGreen-hover) !important;
 }
