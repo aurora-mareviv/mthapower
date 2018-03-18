@@ -1,4 +1,5 @@
-@charset "UTF-8";
+/* EXTRA 'COOL' CSS STYLESHEET BY AURORA-MAREVIV. MAR 2017 - GPL-v3*/
+
 @import url(https://fonts.googleapis.com/css?family=Indie+Flower|Chelsea+Market|Merienda|Aclonica|Poiret+One|Quicksand|Comfortaa:300,300i,400,700,700i&subset=cyrillic,cyrillic-ext,latin-ext); /*'Indie Flower'*/
 @import url(https://fonts.googleapis.com/css?family=Raleway|Saira|Roboto|Karma|Sanchez|Volkhov:300,300i,400,700,700i&subset=cyrillic,cyrillic-ext,latin-ext);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,700,700i&subset=cyrillic,cyrillic-ext,latin-ext); /*original*/
@@ -126,13 +127,12 @@ a:hover{
 	text-decoration: none;
 }
 
-/*navbar link formatting*/
+/*navbar default link formatting*/
 .navbar, .navbar-nav, .navbar-default {
   background-color: var(--lightGreen) !important;
   border-color: var(--lightGreen) !important;
 }
-
-
+/*navbar active link formatting*/
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus,
@@ -144,14 +144,16 @@ a:hover{
 
 
 /*highlight small tweaks for code snippets*/
-/*
- .sourceCode{
+
+ .sourceCode, .usage, .input{
    background-color: var(--darkGrey-background) !important;
    color: var(--lightGrey-code) !important;
    border-radius: 10px;
 }
 
-.sourceCode > .co, .usage > .co, .input > .co{
+.sourceCode > .co,
+.usage > .co,
+.input > .co{
    color: var(--darkGrey-code) !important;
 }
 .sourceCode > .kw, .usage > .kw, .input > .kw{
@@ -170,7 +172,7 @@ a:hover{
 .sourceCode .usage .input  > .kw > .a {
    color: var(--lightBlue-code) !important;
 }
-*/
+
 
 
 

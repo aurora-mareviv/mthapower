@@ -4,7 +4,7 @@ Title: Sample Size and Post-Hoc Power of Association Studies Involving
     Mitochondrial DNA Haplogroups
 Version: 0.1.0
 Authors@R: c(
-    person(c("Aurora"), "Baluja", role = c("aut", "cre"), email = "mariauror@gmail.com")
+    person(c("A"), "Baluja", role = c("aut", "cre"), email = "mariauror@gmail.com")
     )
 Maintainer: Aurora Baluja <mariauror@gmail.com>
 Description: Calculate Sample Size and Post-Hoc Power of
