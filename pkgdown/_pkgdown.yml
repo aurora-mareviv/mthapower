@@ -1,0 +1,24 @@
+template:
+  params:
+    bootswatch: cosmo
+
+authors:
+  Aurora Baluja:
+    href: mailto:mariauror@gmail.com
+
+navbar:
+  title: "mthapower"
+    - icon: fa-home
+  # type: inverse
+  left:
+    - icon: fa-home
+      href: index.html
+    - text: "Functions"
+      href: reference/index.html
+    - text: "Changelog"
+      href: news/index.html
+    - text: "Shiny App"
+      href: https://aurora.shinyapps.io/mtDNA_power_calc/
+  right:
+   - icon: fa-github
+     href: https://github.com/aurora-mareviv/mthapower

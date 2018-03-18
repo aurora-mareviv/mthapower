@@ -38,6 +38,7 @@ vignettes/*.pdf
 .Rproj.user
 .Ruserdata
 README.html
+/ignore/
 
 ####### MacOSX
 
