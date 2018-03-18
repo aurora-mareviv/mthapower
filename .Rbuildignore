@@ -4,4 +4,5 @@ LICENSE.md
 NEWS.md
 README.html
 ^README\.Rmd$
-^README-.*\.png$
+# ^README-.*\.png$
+^pkgdown$

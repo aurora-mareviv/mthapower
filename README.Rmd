@@ -1,5 +1,8 @@
 ---
-output: github_document
+output: 
+  github_document:
+    pandoc_args: [
+    ]
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -9,7 +12,7 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "README-",
-  base.dir = "./"
+  base.dir = "./pkgdown/"
 )
 ```
 
