@@ -39,6 +39,7 @@ vignettes/*.pdf
 .Ruserdata
 README.html
 /ignore/
+/pkgdown/replace-index.sh
 
 ####### MacOSX
 
