@@ -11,12 +11,12 @@ output:
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "README-",
-  base.dir = "./pkgdown/"
+  fig.path = "images/README-"
+  # base.dir = "./"
 )
 ```
 
-# mthapower
+# mthapower  <img src="images/logo.png" align="right" width="100px" />
 
 Calculate sample size and post-hoc power of association studies involving mitochondrial DNA haplogroups - Based on Samuels et al. AJHG, 2006. 78(4):713-720. [DOI:10.1086/502682](https://www.ncbi.nlm.nih.gov/pmc/PMC1424681)
 
