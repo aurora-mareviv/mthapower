@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-mthapower <img src="images/logo.png" align="right" width="100px" />
-===================================================================
+mthapower <img src="images/mthapower.png" align="right" width="100px" />
+========================================================================
 
 Calculate sample size and post-hoc power of association studies involving mitochondrial DNA haplogroups - Based on Samuels et al. AJHG, 2006. 78(4):713-720. [DOI:10.1086/502682](https://www.ncbi.nlm.nih.gov/pmc/PMC1424681)
 
