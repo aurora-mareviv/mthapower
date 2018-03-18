@@ -8,7 +8,7 @@ authors:
 
 navbar:
   title: "mthapower"
-    - icon: fa-home
+
   # type: inverse
   left:
     - icon: fa-home

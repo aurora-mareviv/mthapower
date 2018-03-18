@@ -68,7 +68,7 @@ mydata %>%
 plot(mydata)
 ```
 
-![](README-example-1.png)
+![](./README-example-1.png)
 
 ### Power estimation
 
@@ -115,4 +115,4 @@ scatterplot(power~ncases | OR, reg.line=FALSE,
             data=bindata)
 ```
 
-![](README-example2b-1.png)
+![](./README-example2b-1.png)
