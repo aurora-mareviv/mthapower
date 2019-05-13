@@ -1,4 +1,4 @@
-#' Post-hoc power calculations - mtDNA haplogroups
+#' Power calculations - mtDNA haplogroups
 #'
 #' For a given study size, determine the minimum effect size that can be detected with the desired power and significance level, in a study with \code{Nh} haplogroups.
 #' Note: I assume that case-control equations are valid for cohorts with a balanced number of cases and controls.
@@ -17,7 +17,7 @@
 #' @references 3. Shiny app: \href{https://aurora.shinyapps.io/mtDNA_power_calc}{aurora.shinyapps.io/mtDNA_power_calc}.
 #'
 #'
-#' @return Calculates post-hoc power given the number of cases and other parameters. The output is an object of class \code{data.frame}, ready to plot.
+#' @return Calculates power given the number of cases and other parameters. The output is an object of class \code{data.frame}, ready to plot.
 #'
 #' @examples
 #' # Example 1:

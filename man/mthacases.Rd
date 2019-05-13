@@ -4,8 +4,8 @@
 \alias{mthacases}
 \title{Sample size calculations - mtDNA haplogroups}
 \usage{
-mthacases(p0 = p0, Nh = Nh, OR.cas.ctrl = OR.cas.ctrl, power = power,
-  sig.level = sig.level)
+mthacases(p0 = p0, Nh = Nh, OR.cas.ctrl = OR.cas.ctrl,
+  power = power, sig.level = sig.level)
 }
 \arguments{
 \item{p0}{the frequency of the haplogroup in the control population, (that is, the controls among exposed). It depends on haplogroup baseline frequency.}
