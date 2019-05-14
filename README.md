@@ -1,11 +1,11 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-mthapower <img src="images/mthapower.png" align="right" width="100px" />
-========================================================================
+mthapower <img src="./man/figures/mthapower.png" align="right" width="100px" />
+===============================================================================
 
 [![CRAN version](https://www.r-pkg.org/badges/version/mthapower)](https://cran.r-project.org/package=mthapower) [![Downloads from Rstudio mirror](https://cranlogs.r-pkg.org/badges/grand-total/mthapower)](https://www.r-pkg.org/pkg/mthapower)
 
-Calculate sample size and post-hoc power of association studies involving mitochondrial DNA haplogroups - Based on Samuels et al. AJHG, 2006. 78(4):713-720. [DOI:10.1086/502682](https://www.ncbi.nlm.nih.gov/pmc/PMC1424681)
+Calculate sample size and power for association studies involving mitochondrial DNA haplogroups - Based on Samuels et al. AJHG, 2006. 78(4):713-720. [DOI:10.1086/502682](https://www.ncbi.nlm.nih.gov/pmc/PMC1424681)
 
 Installation
 ------------
@@ -70,7 +70,7 @@ mydata %>%
 plot(mydata)
 ```
 
-![](images/README-example-1.png)
+![](man/figures/README-example-1.png)
 
 ### Power estimation
 
@@ -111,10 +111,10 @@ bindata$OR <- rep(factor(c(1.50,1.75,2,2.5)),
 # Create plot:
 # install.packages("car")
 library(car)
-scatterplot(power~ncases | OR, reg.line=FALSE,
-            smooth=FALSE, spread=FALSE,
-            boxplots=FALSE, span=0.25, by.groups=FALSE,
+scatterplot(power~ncases | OR, regLine=FALSE,
+            smooth=FALSE,
+            boxplots=FALSE,  by.groups=TRUE,
             data=bindata)
 ```
 
-![](images/README-example2b-1.png)
+![](man/figures/README-example2b-1.png)

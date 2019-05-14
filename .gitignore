@@ -71,7 +71,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-
+# non-standard directories
+/ignore_mthapower/
 
 
 

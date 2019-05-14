@@ -4,7 +4,7 @@ Title: Sample Size and Power for Association Studies Involving
     Mitochondrial DNA Haplogroups
 Version: 0.1.1
 Authors@R: c(
-    person(c("A"), "Baluja", 
+    person(c("Aurora"), "Baluja", 
     role = c("aut", "cre"), 
     email = "mariauror@gmail.com",
     comment = c(ORCID = "0000-0002-5204-0771"))

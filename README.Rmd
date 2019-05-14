@@ -11,12 +11,14 @@ output:
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "images/README-"
+  fig.path = "man/figures/README-"
+  # fig.path = "docs/images/README-"
+  # fig.path = "images/README-"
   # base.dir = "./"
 )
 ```
 
-# mthapower  <img src="images/mthapower.png" align="right" width="100px" />
+# mthapower  <img src="./man/figures/mthapower.png" align="right" width="100px" />
 
 [![CRAN version](https://www.r-pkg.org/badges/version/mthapower)](https://cran.r-project.org/package=mthapower)
 [![Downloads from Rstudio mirror](https://cranlogs.r-pkg.org/badges/grand-total/mthapower)](https://www.r-pkg.org/pkg/mthapower)
