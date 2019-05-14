@@ -52,9 +52,9 @@ bindata$OR <- rep(factor(c(1.50,1.75,2,2.5)),
 # Create plot:
 # install.packages("car")
 library(car)
-scatterplot(power~ncases | OR, reg.line=FALSE,
-            smooth=FALSE, spread=FALSE,
-            boxplots=FALSE, span=0.25, by.groups=FALSE,
+scatterplot(power~ncases | OR, regLine=FALSE,
+            smooth=FALSE,
+            boxplots=FALSE,  by.groups=TRUE,
             data=bindata)
 
 }

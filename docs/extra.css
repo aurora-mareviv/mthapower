@@ -165,7 +165,8 @@ a:hover{
 .sourceCode > .kw > .a,
 .usage > .kw > .a,
 .input  > .kw > .a,
-.output  > .kw > .a {
+.output  > .kw > .a
+.output  > .message {
    color: var(--lightBlue-hover) !important;
 }
 .sourceCode  > .st, .usage  > .st, .input > .st, .output > .st {

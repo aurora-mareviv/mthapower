@@ -23,3 +23,7 @@ Shiny app
 # install.packages("shiny")
 shiny::runGist('5895082')
 ```
+
+Version 0.1.1: updated `mthapower` example according to the new `car` package version.
+
+
