@@ -42,7 +42,7 @@ devtools::install_github("aurora-mareviv/mthapower")
 ```
 
 - Package DOI: [10.5281/zenodo.3252674](https://doi.org/10.5281/zenodo.3252674){target="blank"}
-- Cite as: aurora-mareviv. (2019, June 22). aurora-mareviv/mthapower: Mthapower - R package version 0.1.1 (Version 0.1.1). Zenodo. DOI: 10.5281/zenodo.3252674
+- Cite as: Baluja A. (2019, June 22). Mthapower - R package version 0.1.1 (Version 0.1.1). Zenodo. DOI: 10.5281/zenodo.3252674
 
 ## Shiny app
 
