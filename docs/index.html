@@ -8,7 +8,8 @@
 <title>Sample Size and Power for Association Studies Involving
     Mitochondrial DNA Haplogroups • mthapower</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- sticky kit --><script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><link href="extra.css" rel="stylesheet">
 <meta property="og:title" content="Sample Size and Power for Association Studies Involving
@@ -85,30 +86,35 @@
 <a href="#mthapower" class="anchor"></a>mthapower <img src="reference/figures/mthapower.png" align="right" width="100px">
 </h1></div>
 
-<p>Calculate sample size and power for association studies involving mitochondrial DNA haplogroups - Based on Samuels et al. AJHG, 2006. 78(4):713-720. <a href="https://www.ncbi.nlm.nih.gov/pmc/PMC1424681">DOI:10.1086/502682</a></p>
+<p>Calculate sample size and power for association studies involving mitochondrial DNA haplogroups - Based on Samuels et al. AJHG, 2006. 78(4):713-720. <a href="https://www.ncbi.nlm.nih.gov/pmc/PMC1424681" target="blank">DOI:10.1086/502682</a></p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
 <ul>
 <li>From CRAN:</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/install.packages">install.packages</a></span>(<span class="st">"mthapower"</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"mthapower"</span>)</code></pre></div>
 <ul>
 <li>From GitHub:</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># install.packages("devtools")</span>
-devtools<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/devtools/topics/reexports">install_github</a></span>(<span class="st">"aurora-mareviv/mthapower"</span>)</code></pre></div>
+devtools<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/devtools/man/reexports.html">install_github</a></span>(<span class="st">"aurora-mareviv/mthapower"</span>)</code></pre></div>
+<ul>
+<li>Package DOI: <a href="https://doi.org/10.5281/zenodo.3252674" target="blank">10.5281/zenodo.3252674</a>
+</li>
+<li>Cite as: aurora-mareviv. (2019, June 22). aurora-mareviv/mthapower: Mthapower - R package version 0.1.1 (Version 0.1.1). Zenodo. DOI: 10.5281/zenodo.3252674</li>
+</ul>
 </div>
 <div id="shiny-app" class="section level2">
 <h2 class="hasAnchor">
 <a href="#shiny-app" class="anchor"></a>Shiny app</h2>
 <ul>
-<li>Run in Shinyapps.io: <a href="https://aurora.shinyapps.io/mtDNA_power_calc/">mtDNA_power_calc</a>
+<li>Run in Shinyapps.io: <a href="https://aurora.shinyapps.io/mtDNA_power_calc/" target="blank">mtDNA_power_calc</a>
 </li>
 <li>Run locally from Gist:</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># install.packages("shiny")</span>
-shiny<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/shiny/topics/runUrl">runGist</a></span>(<span class="st">'5895082'</span>)</code></pre></div>
+shiny<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/shiny/man/runUrl.html">runGist</a></span>(<span class="st">'5895082'</span>)</code></pre></div>
 </div>
 <div id="examples" class="section level2">
 <h2 class="hasAnchor">
@@ -119,17 +125,17 @@ shiny<span class="op">::</span><span class="kw"><a href="https://www.rdocumentat
 <ul>
 <li>Determine the minimum number of cases (<code>Ncmin</code>), required to detect: either a change from <code>p0</code> (haplogroup frequency in controls) to <code>p1</code> (haplogroup frequency in cases), or a given OR, with a predefined confidence interval, in a study with <code>Nh</code> haplogroups.</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(mthapower)
-<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(dplyr)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(mthapower)
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(dplyr)
 mydata &lt;-<span class="st"> </span><span class="kw"><a href="reference/mthacases.html">mthacases</a></span>(<span class="dt">p0=</span><span class="fl">0.445</span>, <span class="dt">Nh=</span><span class="dv">11</span>,
-                    <span class="dt">OR.cas.ctrl=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="dv">2</span>), <span class="dt">power=</span><span class="dv">80</span>,
+                    <span class="dt">OR.cas.ctrl=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="dv">2</span>), <span class="dt">power=</span><span class="dv">80</span>,
                     <span class="dt">sig.level=</span><span class="fl">0.05</span>) <span class="co"># Baudouin study</span>
 mydata &lt;-<span class="st"> </span><span class="kw"><a href="reference/mthacases.html">mthacases</a></span>(<span class="dt">p0=</span><span class="fl">0.445</span>, <span class="dt">Nh=</span><span class="dv">11</span>,
-                    <span class="dt">OR.cas.ctrl=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="fl">1.25</span>,<span class="fl">1.5</span>,<span class="fl">1.75</span>,<span class="dv">2</span>,<span class="fl">2.25</span>,<span class="fl">2.5</span>,<span class="fl">2.75</span>,<span class="dv">3</span>),
+                    <span class="dt">OR.cas.ctrl=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">1.25</span>,<span class="fl">1.5</span>,<span class="fl">1.75</span>,<span class="dv">2</span>,<span class="fl">2.25</span>,<span class="fl">2.5</span>,<span class="fl">2.75</span>,<span class="dv">3</span>),
                     <span class="dt">power=</span><span class="dv">80</span>, <span class="dt">sig.level=</span><span class="fl">0.05</span>)
-mydata &lt;-<span class="st"> </span>mydata[<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="dv">2</span>,<span class="dv">6</span>)]
+mydata &lt;-<span class="st"> </span>mydata[<span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="dv">2</span>,<span class="dv">6</span>)]
 mydata <span class="op">%&gt;%</span>
-<span class="st">  </span>knitr<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/knitr/topics/kable">kable</a></span>()</code></pre></div>
+<span class="st">  </span>knitr<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span>()</code></pre></div>
 <table class="table table">
 <thead><tr class="header">
 <th align="right">cases.min</th>
@@ -170,7 +176,7 @@ mydata <span class="op">%&gt;%</span>
 </tr>
 </tbody>
 </table>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/graphics/topics/plot">plot</a></span>(mydata)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://rdrr.io/r/graphics/plot.html">plot</a></span>(mydata)</code></pre></div>
 <p><img src="reference/figures/README-example-1.png" width="700"></p>
 </div>
 <div id="power-estimation" class="section level3">
@@ -183,7 +189,7 @@ mydata <span class="op">%&gt;%</span>
 <span class="co"># library(mthapower)</span>
 pow &lt;-<span class="st"> </span><span class="kw"><a href="reference/mthapower.html">mthapower</a></span>(<span class="dt">n.cases=</span><span class="dv">203</span>, <span class="dt">p0=</span><span class="fl">0.443</span>, <span class="dt">Nh=</span><span class="dv">13</span>, <span class="dt">OR.cas.ctrl=</span><span class="fl">2.33</span>, <span class="dt">sig.level=</span><span class="fl">0.05</span>)
 pow <span class="op">%&gt;%</span>
-<span class="st">  </span>knitr<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/knitr/topics/kable">kable</a></span>()</code></pre></div>
+<span class="st">  </span>knitr<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span>()</code></pre></div>
 <table class="table table">
 <thead><tr class="header">
 <th align="right">Nh</th>
@@ -208,27 +214,27 @@ pow <span class="op">%&gt;%</span>
 </table>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Example 2b:</span>
 <span class="co"># Create data frames</span>
-pow.H150 &lt;-<span class="st"> </span><span class="kw"><a href="reference/mthapower.html">mthapower</a></span>(<span class="dt">n.cases=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/seq">seq</a></span>(<span class="dv">50</span>,<span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">50</span>), <span class="dt">p0=</span><span class="fl">0.433</span>, <span class="dt">Nh=</span><span class="dv">11</span>,
+pow.H150 &lt;-<span class="st"> </span><span class="kw"><a href="reference/mthapower.html">mthapower</a></span>(<span class="dt">n.cases=</span><span class="kw"><a href="https://rdrr.io/r/base/seq.html">seq</a></span>(<span class="dv">50</span>,<span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">50</span>), <span class="dt">p0=</span><span class="fl">0.433</span>, <span class="dt">Nh=</span><span class="dv">11</span>,
                       <span class="dt">OR.cas.ctrl=</span><span class="fl">1.5</span>, <span class="dt">sig.level=</span><span class="fl">0.05</span>)
-pow.H175 &lt;-<span class="st"> </span><span class="kw"><a href="reference/mthapower.html">mthapower</a></span>(<span class="dt">n.cases=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/seq">seq</a></span>(<span class="dv">50</span>,<span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">50</span>), <span class="dt">p0=</span><span class="fl">0.433</span>, <span class="dt">Nh=</span><span class="dv">11</span>,
+pow.H175 &lt;-<span class="st"> </span><span class="kw"><a href="reference/mthapower.html">mthapower</a></span>(<span class="dt">n.cases=</span><span class="kw"><a href="https://rdrr.io/r/base/seq.html">seq</a></span>(<span class="dv">50</span>,<span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">50</span>), <span class="dt">p0=</span><span class="fl">0.433</span>, <span class="dt">Nh=</span><span class="dv">11</span>,
                       <span class="dt">OR.cas.ctrl=</span><span class="fl">1.75</span>, <span class="dt">sig.level=</span><span class="fl">0.05</span>)
-pow.H200 &lt;-<span class="st"> </span><span class="kw"><a href="reference/mthapower.html">mthapower</a></span>(<span class="dt">n.cases=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/seq">seq</a></span>(<span class="dv">50</span>,<span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">50</span>), <span class="dt">p0=</span><span class="fl">0.433</span>, <span class="dt">Nh=</span><span class="dv">11</span>,
+pow.H200 &lt;-<span class="st"> </span><span class="kw"><a href="reference/mthapower.html">mthapower</a></span>(<span class="dt">n.cases=</span><span class="kw"><a href="https://rdrr.io/r/base/seq.html">seq</a></span>(<span class="dv">50</span>,<span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">50</span>), <span class="dt">p0=</span><span class="fl">0.433</span>, <span class="dt">Nh=</span><span class="dv">11</span>,
                       <span class="dt">OR.cas.ctrl=</span><span class="dv">2</span>, <span class="dt">sig.level=</span><span class="fl">0.05</span>)
-pow.H250 &lt;-<span class="st"> </span><span class="kw"><a href="reference/mthapower.html">mthapower</a></span>(<span class="dt">n.cases=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/seq">seq</a></span>(<span class="dv">50</span>,<span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">50</span>), <span class="dt">p0=</span><span class="fl">0.433</span>, <span class="dt">Nh=</span><span class="dv">11</span>,
+pow.H250 &lt;-<span class="st"> </span><span class="kw"><a href="reference/mthapower.html">mthapower</a></span>(<span class="dt">n.cases=</span><span class="kw"><a href="https://rdrr.io/r/base/seq.html">seq</a></span>(<span class="dv">50</span>,<span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">50</span>), <span class="dt">p0=</span><span class="fl">0.433</span>, <span class="dt">Nh=</span><span class="dv">11</span>,
                       <span class="dt">OR.cas.ctrl=</span><span class="fl">2.5</span>, <span class="dt">sig.level=</span><span class="fl">0.05</span>)
 
 <span class="co"># Bind the three data frames:</span>
-bindata &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/cbind">rbind</a></span>(pow.H150,pow.H175,pow.H200,pow.H250)
+bindata &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/cbind.html">rbind</a></span>(pow.H150,pow.H175,pow.H200,pow.H250)
 <span class="co"># Adds column OR to binded data frame:</span>
-bindata<span class="op">$</span>OR &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rep">rep</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/factor">factor</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="fl">1.50</span>,<span class="fl">1.75</span>,<span class="dv">2</span>,<span class="fl">2.5</span>)),
-              <span class="dt">times =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/nrow">nrow</a></span>(pow.H150),
-                        <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/nrow">nrow</a></span>(pow.H175),
-                        <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/nrow">nrow</a></span>(pow.H200),
-                        <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/nrow">nrow</a></span>(pow.H250)))
+bindata<span class="op">$</span>OR &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/rep.html">rep</a></span>(<span class="kw"><a href="https://rdrr.io/r/base/factor.html">factor</a></span>(<span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">1.50</span>,<span class="fl">1.75</span>,<span class="dv">2</span>,<span class="fl">2.5</span>)),
+              <span class="dt">times =</span> <span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="kw"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span>(pow.H150),
+                        <span class="kw"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span>(pow.H175),
+                        <span class="kw"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span>(pow.H200),
+                        <span class="kw"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span>(pow.H250)))
 <span class="co"># Create plot:</span>
 <span class="co"># install.packages("car")</span>
-<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(car)
-<span class="kw"><a href="https://www.rdocumentation.org/packages/car/topics/scatterplot">scatterplot</a></span>(power<span class="op">~</span>ncases <span class="op">|</span><span class="st"> </span>OR, <span class="dt">regLine=</span><span class="ot">FALSE</span>,
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(car)
+<span class="kw"><a href="https://rdrr.io/pkg/car/man/scatterplot.html">scatterplot</a></span>(power<span class="op">~</span>ncases <span class="op">|</span><span class="st"> </span>OR, <span class="dt">regLine=</span><span class="ot">FALSE</span>,
             <span class="dt">smooth=</span><span class="ot">FALSE</span>,
             <span class="dt">boxplots=</span><span class="ot">FALSE</span>,  <span class="dt">by.groups=</span><span class="ot">TRUE</span>,
             <span class="dt">data=</span>bindata)</code></pre></div>
@@ -268,8 +274,9 @@ bindata<span class="op">$</span>OR &lt;-<span class="st"> </span><span class="kw
       <div class="dev-status">
 <h2>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://cran.r-project.org/package=mthapower"><img src="https://www.r-pkg.org/badges/version/mthapower" alt="CRAN version"></a></li>
-<li><a href="https://www.r-pkg.org/pkg/mthapower"><img src="https://cranlogs.r-pkg.org/badges/grand-total/mthapower" alt="Downloads from Rstudio mirror"></a></li>
+<li><a href="https://cran.r-project.org/package=mthapower" target="blank"><img src="https://www.r-pkg.org/badges/version/mthapower" alt="CRAN version"></a></li>
+<li><a href="https://www.r-pkg.org/pkg/mthapower" target="blank"><img src="https://cranlogs.r-pkg.org/badges/grand-total/mthapower" alt="Downloads from Rstudio mirror"></a></li>
+<li><a href="https://zenodo.org/badge/latestdoi/95907604" target="blank"><img src="https://zenodo.org/badge/95907604.svg" alt="DOI"></a></li>
 </ul>
 </div>
 </div>
@@ -282,7 +289,7 @@ bindata<span class="op">$</span>OR &lt;-<span class="st"> </span><span class="kw
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.9000.</p>
 </div>
       </footer>
 </div>

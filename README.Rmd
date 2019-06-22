@@ -20,10 +20,11 @@ knitr::opts_chunk$set(
 
 # mthapower  <img src="./man/figures/mthapower.png" align="right" width="100px" />
 
-[![CRAN version](https://www.r-pkg.org/badges/version/mthapower)](https://cran.r-project.org/package=mthapower)
-[![Downloads from Rstudio mirror](https://cranlogs.r-pkg.org/badges/grand-total/mthapower)](https://www.r-pkg.org/pkg/mthapower)
+[![CRAN version](https://www.r-pkg.org/badges/version/mthapower)](https://cran.r-project.org/package=mthapower){target="blank"}
+[![Downloads from Rstudio mirror](https://cranlogs.r-pkg.org/badges/grand-total/mthapower)](https://www.r-pkg.org/pkg/mthapower){target="blank"}
+[![DOI](https://zenodo.org/badge/95907604.svg)](https://zenodo.org/badge/latestdoi/95907604){target="blank"}
 
-Calculate sample size and power for association studies involving mitochondrial DNA haplogroups - Based on Samuels et al. AJHG, 2006. 78(4):713-720. [DOI:10.1086/502682](https://www.ncbi.nlm.nih.gov/pmc/PMC1424681)
+Calculate sample size and power for association studies involving mitochondrial DNA haplogroups - Based on Samuels et al. AJHG, 2006. 78(4):713-720. [DOI:10.1086/502682](https://www.ncbi.nlm.nih.gov/pmc/PMC1424681){target="blank"}
 
 ## Installation
 
@@ -40,9 +41,12 @@ install.packages("mthapower")
 devtools::install_github("aurora-mareviv/mthapower")
 ```
 
+- Package DOI: [10.5281/zenodo.3252674](https://doi.org/10.5281/zenodo.3252674){target="blank"}
+- Cite as: aurora-mareviv. (2019, June 22). aurora-mareviv/mthapower: Mthapower - R package version 0.1.1 (Version 0.1.1). Zenodo. DOI: 10.5281/zenodo.3252674
+
 ## Shiny app
 
-- Run in Shinyapps.io: [mtDNA_power_calc](https://aurora.shinyapps.io/mtDNA_power_calc/)
+- Run in Shinyapps.io: [mtDNA_power_calc](https://aurora.shinyapps.io/mtDNA_power_calc/){target="blank"}
 - Run locally from Gist: 
 
 ```{r gh-rungist, eval = FALSE}
